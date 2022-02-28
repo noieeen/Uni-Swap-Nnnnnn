@@ -33,9 +33,9 @@ function Main() {
           <input
             type="text"
             className={style.transferPropInput}
-            placeHolder="0.0"
+            placeholder="0.0"
             pattern="^[0-9]*[.,]?[0-9]*$"
-            onchange={(e) => {
+            onChange={(e) => {
               handleChange(e, 'amount')
             }}
           />
@@ -59,10 +59,12 @@ function Main() {
           <input
             type="text"
             className={style.transferPropInput}
-            placeHolder="0x..."
-            onchange={(e) => handleChange(e, 'addressTo')}
+            placeholder="0x..."
+            onChange={(e) => handleChange(e, 'addressTo')}
           />
+          <div className={style.currencySelector}></div>
         </div>
+        <div onClick={(e) => handleSubmit(e)} className={style.confirmButton}>Confirm</div>
       </div>
     </div>
   )

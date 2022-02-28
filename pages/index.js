@@ -9,6 +9,7 @@ const style = {
 export default function Home() {
   return (
     <div className={style.wrapper}>
+
       <Header />
       <Main/>
       <div>Transanictidasdfasdfaon History</div>
