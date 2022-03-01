@@ -22,7 +22,7 @@ export const TransactionProvider = ({ children }) => {
       setCurrentAccount(accounts[0])
     } catch (err) {
       console.log(err)
-      // throw new Error('No ethereum object.')
+      throw new Error('No ethereum object.')
     }
   }
 
@@ -38,7 +38,7 @@ export const TransactionProvider = ({ children }) => {
       }
     } catch (err) {
       console.log(err)
-      // throw new Error('No ethereum object.')
+      throw new Error('No ethereum object.')
     }
   }
 
